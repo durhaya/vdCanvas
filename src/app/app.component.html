@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>
+        I'm in the app component
+      </h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <app-vd-canvas #vdCanvas [options]="canvasOptions" (onSave)="onCanvasSave($event)" [(ngModel)]="diagram">
+    </app-vd-canvas>
+    <button class="btn btn-primary" (click)="getDrawing()">Get Drawing</button>
+  </div>  
+</div>
